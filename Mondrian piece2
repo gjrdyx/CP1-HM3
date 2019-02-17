@@ -1,0 +1,31 @@
+function setup() {
+  createCanvas(400, 400);
+  angleMode(DEGREES);
+}
+
+function draw() {
+  background(0);
+  rotate(45);
+  
+  fill(240, 231, 210);
+  rect(143, -138, 279, 279); 
+
+  rotate(-45);
+  stroke(0); // Black
+  strokeWeight(7);
+  line(0, 110, width, 110); // middle horizontal
+  line(103, 0, 103, height); // left vertical
+
+  strokeWeight(8);
+  line(0, 335, width, 335); // bottom horizontal
+
+  strokeWeight(10);
+  line(320, 0, 320, height); // top horizontal
+  
+  rotate(45);
+  stroke(200);
+  strokeWeight(2);
+  fill(0, 0, 0, 0);
+  rect(143, -138, 279, 279); 
+
+}
